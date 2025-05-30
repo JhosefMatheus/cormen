@@ -8,7 +8,7 @@ type UserModel struct {
 }
 
 func (u *UserModel) Key() int {
-	return len(u.Name)
+	return u.Id
 }
 
 func (u *UserModel) ToString() string {
